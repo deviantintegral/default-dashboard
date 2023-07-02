@@ -12,12 +12,13 @@ jobs:
   build:
     name: Test build
     runs-on: ubuntu-22.04
-    - uses: actions/setup-node@v3
-      with:
-        node-version-file: '.nvmrc'
 
     steps:
       - uses: actions/checkout@v1
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
       - name: Build
         run: |
           yarn
