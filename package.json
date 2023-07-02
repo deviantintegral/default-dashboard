@@ -11,7 +11,7 @@
     "custom-cards"
   ],
   "module": "default-dashboard.js",
-  "repository": "git@github.com:daredoes/default-dashboard.git",
+  "repository": "git@github.com:deviantintegral/default-dashboard.git",
   "author": "DARE <me@daredoes.work>",
   "license": "MIT",
   "dependencies": {
