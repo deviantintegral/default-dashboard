@@ -142,7 +142,7 @@ const setDefaultDashboard = async (url: string) => {
       const url = hass.states[DEFAULT_DASHBOARD_DROPDOWN]?.state;
       const options = [OVERVIEW_OPTION, ...Object.keys(urls), REFRESH_OPTION];
       await setDefaultDashboardOptions(hass, options);
-      if (urls.hasOwnProperty(url)) {
+      if (urls[url]) {
         await setDefaultDashboardOption(hass, url);
       }
       else {
