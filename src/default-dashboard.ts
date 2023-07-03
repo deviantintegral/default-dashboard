@@ -140,7 +140,7 @@ const setDefaultDashboard = async (url: string) => {
       log('Setting dropdown options');
       const urls = await getUrlsHash();
       await setDefaultDashboardOptions(hass, [OVERVIEW_OPTION, ...Object.keys(urls), REFRESH_OPTION]);
-      await setDefaultDashboardOption(hass, OVERVIEW_OPTION);
+      // await setDefaultDashboardOption(hass, OVERVIEW_OPTION);
       return;
     } else {
       // Sixth-else, we try to enable default dashboard for this user, and then try to set the default dashboard for this user
